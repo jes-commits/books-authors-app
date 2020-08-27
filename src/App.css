@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
-}
+ /*whole books app styling begins from here*/
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.booksApp {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.booksForm {
+  background-color:#59AFB3;
+  height: 60vh;
+  width: 40vw;
+  margin: 5vh 1vw;
+}
+
+.booksForm > input[type=text] {
+  background-color:#26F4FF;
+  color:white;
+  width: 30vw;
+  margin: 5vh 4.5vw;
+  border: none;
+  border-radius: 3px;
+  font-size: 24pt;
+  font-weight: bold;
+  padding-left: 5px;
+}
+
+input[type=text]:focus{
+  outline: none;
+}
+
+.booksForm > input[type=submit] {
+  background-color: teal;
+  margin: 2vh 16vw;
   color: white;
+  border: none;
+  border-radius: 7px;
+  font-size: 24pt;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.booksList {
+  background-color: teal;
+  color: azure;
+  margin-top: 2vh;
+  height: 100%;
+  width: 40vw;
+  text-align: center;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
