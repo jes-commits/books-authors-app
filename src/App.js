@@ -52,7 +52,7 @@ class BooksApp extends Component {
 				{/*book list starts from here */}
 				<div className='booksList'>
 					{
-						this.state.books.map((books) => <BookItem book={books.book} author={books.author} />)
+						this.state.books.map((books,index) => <BookItem key={index} book={books.book} author={books.author} />)
 					}
 				</div>
 			
